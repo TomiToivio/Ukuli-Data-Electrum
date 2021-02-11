@@ -1,0 +1,26 @@
+{
+  "name": "ukuli-data-electrum",
+  "version": "1.0.0",
+  "description": "Ukuli Data Electrum",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomiToivio/Ukuli-Data-Electrum.git"
+  },
+  "keywords": [
+    "node",
+    "electrum"
+  ],
+  "author": "Tomi Toivio",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/TomiToivio/Ukuli-Data-Electrum/issues"
+  },
+  "homepage": "https://github.com/TomiToivio/Ukuli-Data-Electrum#readme",
+  "devDependencies": {
+    "electron": "^11.2.3"
+  }
+}
