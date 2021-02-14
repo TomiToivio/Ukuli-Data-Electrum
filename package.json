@@ -4,6 +4,7 @@
   "description": "Electron",
   "main": "index.js",
   "dependencies": {
+    "mqtt": "^4.2.6",
     "simplemde": "^1.11.2"
   },
   "devDependencies": {
