@@ -24,13 +24,18 @@
     });
 </script>
 <script>
-  const { ipcRenderer } = require('electron');
+    var editor = new SimpleMDE({
+        element: document.getElementById('editor')
+    });
+
+    const { ipcRenderer } = require('electron');
       
-  ipcRenderer.on('editor-event', (event, arg) => {
-    console.log(arg);
-    // send message back to main process
-    event.sender.send('editor-reply', `Received ${arg}`);
-  });
+    ipcRenderer.on('editor-event', (event, arg) => {
+        console.log(arg);
+        event.sender.send('editor-reply', `Received ${arg}`);
+    });
+
+    ipcRenderer.send('editor-reply', 'Page Loaded');
 </script>
 
 </body>      
