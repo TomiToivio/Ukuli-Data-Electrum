@@ -16,11 +16,14 @@ const { Menu, shell } = require('electron');
           label: 'Debugging',
           submenu: [
             {
-              label: 'Dev Tools',  
+              label: 'Dev Tools',
               role: 'toggleDevTools'
-            }
+            },
+      
+            { type: 'separator' },
+            { role: 'reload' }
           ]
-        }
+      }
       ];
 
       const menu = Menu.buildFromTemplate(template);
