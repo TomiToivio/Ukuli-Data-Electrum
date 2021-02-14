@@ -11,6 +11,14 @@ const { Menu, shell } = require('electron');
               }
             }
           ]
+        },
+        {
+          label: 'Debugging',
+          submenu: [
+            {
+              role: 'toggleDevTools'
+            }
+          ]
         }
       ];
 
