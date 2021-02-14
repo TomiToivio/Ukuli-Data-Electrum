@@ -16,6 +16,12 @@
 <script src="./public/js/ukuli.js"></script>
 </head>      
 <body>          
-<h1>Editor</h1>      
+<h1>Editor</h1>     
+ <textarea id="editor"></textarea>
+      <script>
+        var editor = new SimpleMDE({ 
+          element: document.getElementById('editor') 
+        });
+      </script>
 </body>      
 </html>
