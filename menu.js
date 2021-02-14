@@ -16,6 +16,7 @@ const { Menu, shell } = require('electron');
           label: 'Debugging',
           submenu: [
             {
+              label: 'Dev Tools',  
               role: 'toggleDevTools'
             }
           ]
