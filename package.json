@@ -1,26 +1,27 @@
 {
-  "name": "ukuli-data-electrum",
+  "name": "ukulibotdesktop",
   "version": "1.0.0",
-  "description": "Ukuli Data Electrum",
+  "description": "Electron",
   "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^11.2.3",
+    "electron-builder": "^22.9.1"
+  },
   "scripts": {
-    "test": "test.js"
+          "start": "electron ." 
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TomiToivio/Ukuli-Data-Electrum.git"
+    "url": "git+https://github.com/TomiToivio/ukulibotdesktop.git"
   },
   "keywords": [
-    "node",
-    "electrum"
+    "Electron"
   ],
   "author": "Tomi Toivio",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/TomiToivio/Ukuli-Data-Electrum/issues"
+    "url": "https://github.com/TomiToivio/ukulibotdesktop/issues"
   },
-  "homepage": "https://github.com/TomiToivio/Ukuli-Data-Electrum#readme",
-  "devDependencies": {
-    "electron": "^11.2.3"
-  }
+  "homepage": "https://github.com/TomiToivio/ukulibotdesktop#readme"
 }
