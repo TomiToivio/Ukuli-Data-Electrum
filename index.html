@@ -28,6 +28,8 @@
       
   ipcRenderer.on('editor-event', (event, arg) => {
     console.log(arg);
+    // send message back to main process
+    event.sender.send('editor-reply', `Received ${arg}`);
   });
 </script>
 
