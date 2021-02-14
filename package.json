@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "description": "Electron",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "simplemde": "^1.11.2"
+  },
   "devDependencies": {
     "electron": "^11.2.3",
     "electron-builder": "^22.9.1"
   },
   "scripts": {
-          "start": "electron ." 
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
