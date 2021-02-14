@@ -24,18 +24,22 @@
     });
 </script>
 <script>
-    var editor = new SimpleMDE({
-        element: document.getElementById('editor')
-    });
+            var editor = new SimpleMDE({
+              element: document.getElementById('editor')
+            });
 
-    const { ipcRenderer } = require('electron');
+            const { ipcRenderer } = require('electron');
+
+            ipcRenderer.on('editor-event', (event, arg) => {
+              console.log(arg);
+              event.sender.send('editor-reply', `Received ${arg}`);
       
-    ipcRenderer.on('editor-event', (event, arg) => {
-        console.log(arg);
-        event.sender.send('editor-reply', `Received ${arg}`);
-    });
+              if (arg === 'toggle-bold') {
+                editor.toggleBold();
+              }
+            });
 
-    ipcRenderer.send('editor-reply', 'Page Loaded');
+            ipcRenderer.send('editor-reply', 'Page Loaded');
 </script>
 
 </body>      
