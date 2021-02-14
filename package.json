@@ -4,6 +4,8 @@
   "description": "Electron",
   "main": "index.js",
   "dependencies": {
+    "@iota/core": "^1.0.0-beta.30",
+    "config": "^3.3.3",
     "mqtt": "^4.2.6",
     "simplemde": "^1.11.2"
   },
