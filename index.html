@@ -18,10 +18,18 @@
 <body>          
 <h1>Editor</h1>     
  <textarea id="editor"></textarea>
-      <script>
-        var editor = new SimpleMDE({ 
-          element: document.getElementById('editor') 
-        });
-      </script>
+<script>
+    var editor = new SimpleMDE({ 
+        element: document.getElementById('editor') 
+    });
+</script>
+<script>
+  const { ipcRenderer } = require('electron');
+      
+  ipcRenderer.on('editor-event', (event, arg) => {
+    console.log(arg);
+  });
+</script>
+
 </body>      
 </html>
